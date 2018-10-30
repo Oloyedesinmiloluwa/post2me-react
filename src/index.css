@@ -12,3 +12,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.center-div {
+  margin: 10px;
+}
+.container {
+  background-color: rgb(0, 0, 0, 0.03);
+}
+label.btn {
+  font-size: 70%;
+  padding: 2px 4px!important;
+  background-color: grey;
+}
+.card-header span {
+  float: right;
+  font-size: 90%;
+  margin: 0 auto;
+}
