@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from './Button';
+import defaultPic from '../static/profile_twitter.jpeg';
+import './card.css';
 
 const convertToDate = (value) => {
   const date = new Date(value);
   return date.toDateString();
   // return value.toString();
 }
-const Card = ({ post, onClick }) => {
+const CardOld = ({ post, onClick }) => {
   return (
       <div className="card border-secondary mb-3" >
   <div className="card-header">{post.user.name} <span >{convertToDate(post.created_at)}</span></div>
@@ -18,4 +20,23 @@ const Card = ({ post, onClick }) => {
   )
 }
 
-export default Card
+const Card = ({ post, onClick }) => (
+  <div className="card">
+    <div className="card--header">
+      <img src={defaultPic} alt="profile of author" className="float-left" />
+      <span id="author-name">{post.user.name}</span>
+      <p className="post--date">{convertToDate(post.created_at)}</p>
+    </div>
+    {post.body}
+    <div className="card--footer">
+      <span>5 Likes</span>
+      <span className="float-right">3 Comments</span>
+    </div>
+    <div className="card--footer-buttons">
+      <div id="like-button"><i className="far fa-thumbs-up" />&nbsp;Like</div>
+      <div id="comment-button" className="float-right"><i className="far fa-comment-alt" />&nbsp;Comment</div>
+    </div>
+  </div>
+);
+
+export default Card;

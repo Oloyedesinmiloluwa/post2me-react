@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import PostPage from './PostPage';
+import PostPage from './PostPageContainer';
 
-const AppRouter = () => {
+const Routes = () => {
   return (
     <Router>
       <Switch>
@@ -13,4 +13,4 @@ const AppRouter = () => {
   )
 }
 
-export default AppRouter
+export default Routes

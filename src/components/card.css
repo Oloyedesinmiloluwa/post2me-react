@@ -1,0 +1,44 @@
+.card img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
+  /* height:  */
+}
+.card {
+  height: 180px;
+  width: 360px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+p.post--date {
+  margin-left: 50px;
+font-weight: lighter;
+}
+
+.card--header {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+}
+.card--footer {
+  margin-top: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#comment-button, #like-button{
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  font-size: 90%;
+}
+
+#comment-button:hover, #like-button:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+

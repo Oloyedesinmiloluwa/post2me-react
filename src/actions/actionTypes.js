@@ -1,0 +1,3 @@
+export default {
+  GET_ALL_POSTS_SUCCESS: 'GET_ALL_POSTS_SUCCESS'
+}

@@ -17,6 +17,7 @@ code {
 }
 .container {
   background-color: rgb(0, 0, 0, 0.03);
+  background-color: #e9ebee;
 }
 label.btn {
   font-size: 70%;
