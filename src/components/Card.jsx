@@ -20,20 +20,20 @@ const CardOld = ({ post, onClick }) => {
   )
 }
 
-const Card = ({ post, onClick }) => (
+const Card = ({ post, handleClick }) => (
   <div className="card">
     <div className="card--header">
       <img src={defaultPic} alt="profile of author" className="float-left" />
       <span id="author-name">{post.user.name}</span>
-      <p className="post--date">{convertToDate(post.created_at)}</p>
+      <p className="post--date">{convertToDate(post.createdAt)}</p>
     </div>
     {post.body}
     <div className="card--footer">
-      <span>5 Likes</span>
-      <span className="float-right">3 Comments</span>
+      <span>{post.userLikes.length} <i className="fas fa-thumbs-up"></i></span>
+      <span className="float-right">{post.comments.length} Comments</span>
     </div>
     <div className="card--footer-buttons">
-      <div id="like-button"><i className="far fa-thumbs-up" />&nbsp;Like</div>
+      <div onClick={(event) => handleClick(event, post.id)} id="like-button"><i className="far fa-thumbs-up" />&nbsp;Like</div>
       <div id="comment-button" className="float-right"><i className="far fa-comment-alt" />&nbsp;Comment</div>
     </div>
   </div>

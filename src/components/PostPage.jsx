@@ -17,7 +17,7 @@ import Card from './Card';
             </div>
             {
               posts.map((post, index) => {
-                return <Card key={index} post={post} onClick={handleClick} />
+                return <Card key={index} post={post} handleClick={handleClick} />
               })
             }
           </div>

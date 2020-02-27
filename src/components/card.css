@@ -6,7 +6,7 @@
 }
 .card {
   height: 180px;
-  width: 360px;
+  /* width: 360px; */
   padding: 10px;
   margin-bottom: 5px;
 }
@@ -14,7 +14,13 @@ p.post--date {
   margin-left: 50px;
 font-weight: lighter;
 }
-
+i.fas.fa-thumbs-up {
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+  font-size: 90%;
+  border: solid 3px blue;
+}
 .card--header {
   font-size: 13px;
   font-weight: 600;
@@ -41,4 +47,3 @@ font-weight: lighter;
 #comment-button:hover, #like-button:hover{
   background-color: rgba(0, 0, 0, 0.05);
 }
-
